@@ -1,4 +1,4 @@
-# 🎂 Cake Fantasy — Premium Online Bakery & Custom Cake Ordering System
+# Cake Fantasy — Online Bakery & Custom Cake Ordering System
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
@@ -10,32 +10,32 @@ An end-to-end full-stack e-commerce web application designed for bakeries and co
 
 ---
 
-## 🌟 Key Highlights & Features
+## Key Highlights & Features
 
-### 🛍️ 1. Customer Storefront & Ordering Experience
+### 1. Customer Storefront & Ordering Experience
 * **Dynamic Category & Product Catalog**: Explore wedding cakes, bento cakes, cupcakes, celebration cakes, and combo packages with live database retrieval.
 * **Instant Keyword Search**: Fast, responsive search bar in the navbar across all pages.
 * **Custom Cake Builder**: Interactive custom cake order customizer allowing customers to choose flavors, frostings, tiers, custom messages, and scheduled delivery dates.
 * **Smart Shopping Cart**: Session-backed cart with real-time navbar badge counters, live item quantity increments/decrements, subtotal recalculations, and empty-state illustrations.
 
-### 💳 2. Checkout & Multi-Payment Processing
+### 2. Checkout & Multi-Payment Processing
 * **Interactive Checkout Flow**: Prefills registered customer credentials; manages direct product checkout or complete cart checkout.
 * **Credit / Debit Card Checkout**: Dynamic card billing form with client-side input masking (auto-formatting 16-digit card numbers and `MM/YY` expiry dates as you type).
 * **Cash on Delivery (COD)**: Instant order confirmation with status tracking in MySQL.
 
-### 🔐 3. Authentication & Real Google Sign-In
+### 3. Authentication & Real Google Sign-In
 * **Secure Customer Auth**: Password hashing using `password_hash()` and `password_verify()`.
 * **Google Sign-In Integration**: Integrated with Google Identity Services (GIS) and real Gmail authentication—automatically provisioning customer accounts in MySQL on first login.
 * **Personalized Navbar State**: Live session greeting (e.g. *"Hi, Chanaka"*) with single-click logout.
 
-### 🛡️ 4. Administration Dashboard & System Control
+### 4. Administration Dashboard & System Control
 * **Protected System Owner (`ramesha`)**: Multi-layer security guard making the system owner immune to deletion, modification, or password overrides.
 * **Inventory & Category Management**: Add, update, and remove cake items and categories with automatic image processing and storage into `/images`.
 * **Order Tracking & Metrics**: Real-time sales KPIs, order delivery status updates, and transaction monitoring.
 
 ---
 
-## 📂 Project Directory Structure
+## Project Directory Structure
 
 Organized following professional web standards:
 
@@ -75,21 +75,21 @@ cakefantasy/
 └── README.md                  # Project documentation
 ```
 
----
 
-## 🛠️ Technology Stack
+
+## Technology Stack
 
 | Layer | Technologies Used |
 |---|---|
 | **Backend** | PHP 8.2+ (Procedural / Prepared Statements), MySQL Database |
-| **Frontend** | HTML5, CSS3 (Custom Variables, Flexbox, CSS Grid), Vanilla JavaScript (ES6+) |
+| **Frontend** | HTML5, CSS3 (Custom Variables, Flexbox, CSS Grid), JavaScript  |
 | **Authentication** | PHP Session Management, `BCrypt` Hashing, Google Identity Services SDK |
-| **Server Environment** | Apache (WampServer / XAMPP / LAMP) |
+| **Server Environment** | Apache (WampServer) |
 | **Fonts & Icons** | FontAwesome 6, Google Fonts (*Outfit*, *Raleway*, *Great Vibes*) |
 
----
 
-## 🗄️ Database Schema Overview
+
+## Database Schema Overview
 
 The MySQL database `project` contains 5 core relational tables:
 
@@ -99,12 +99,12 @@ The MySQL database `project` contains 5 core relational tables:
 4. **`tbl_cakes`**: Individual pastry items linked by `catagory_id` (`id`, `title`, `description`, `price`, `image_name`, `featured`, `active`).
 5. **`tbl_order`**: Customer purchase transactions (`id`, `product`, `price`, `qty`, `total`, `order_date`, `status`, `customer_name`, `customer_contact`, `customer_email`, `customer_address`).
 
----
 
-## 🚀 Getting Started & Installation
+
+## Getting Started & Installation
 
 ### Prerequisites
-* [WampServer](https://www.wampserver.com/) or [XAMPP](https://www.apachefriends.org/) with **PHP 8.0+** and **MySQL 5.7+**.
+* [WampServer](https://www.wampserver.com/) with **PHP 8.0+** and **MySQL 5.7+**.
 
 ### Step-by-Step Setup
 
@@ -128,9 +128,9 @@ The MySQL database `project` contains 5 core relational tables:
    * **Customer Storefront**: `http://localhost/cakefantasy/Project.php`
    * **Admin Dashboard**: `http://localhost/cakefantasy/admin/login.php`
 
----
 
-## 🔑 Demo Credentials
+
+## Demo Credentials
 
 ### 👨‍💼 Administrator Account
 * **URL:** `http://localhost/cakefantasy/admin/login.php`
@@ -143,29 +143,31 @@ The MySQL database `project` contains 5 core relational tables:
 * **Email:** `devinu@gmail.com` | **Password:** `password`
 * *(Or click **"Continue with Google"** to log in instantly with your real Gmail!)*
 
----
 
-## 📸 Screenshots Showcase
+## Screenshots 
 
-*(Tip: Add your project screenshots here when uploading to GitHub!)*
+**Login**
+<img width="1365" height="719" alt="Screenshot 2026-09-29 231838" src="https://github.com/user-attachments/assets/22fad317-716f-4739-bea9-3c0121fe3694" />
 
-| Customer Storefront | Custom Cake Customizer |
-|:---:|:---:|
-| ![Homepage](images/shop.jpg) | ![Customizer](images/custom.jpg) |
+**Cart**
+<img width="1365" height="717" alt="Screenshot 2026-09-29 232044" src="https://github.com/user-attachments/assets/efb2eaff-d017-42e9-8e02-d5a9ea7bebc0" />
 
-| Shopping Cart & Checkout | Admin Dashboard |
-|:---:|:---:|
-| ![Cart](images/cheesecake.jpg) | ![Admin Panel](images/logo.jpg) |
+**User Login**
+<img width="1365" height="715" alt="Screenshot 2026-09-29 232125" src="https://github.com/user-attachments/assets/665abe85-8b0e-4f1c-8864-2ce2fd112c60" />
 
----
+**Admin Login**
+<img width="1366" height="714" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/32f3f25d-1a98-4e7e-b892-656612e38b99" />
 
-## 👩‍💻 Author & Acknowledgements
 
-* **Developer & System Designer:** Ramesha Sandali
-* **Designed for:** Diploma in Information Technology (DIT) Final Project Showcase
 
----
 
-## 📝 License
+## Author & Acknowledgements
 
-This project is licensed under the **MIT License** — feel free to use and customize it for learning and portfolio purposes!
+* **Developer & System Designer:** Ramesha Sandali Rangika
+* **LinkedIn:** https://lk.linkedin.com/in/ramesha-sandali
+
+
+
+## License
+
+This project is developed for educational purposes as part of the Diploma in Information Technology program in Wayamba University of ri Lanka.
