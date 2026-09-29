@@ -1,11 +1,5 @@
 # Cake Fantasy — Online Bakery & Custom Cake Ordering System
 
-[![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-[![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-Modern_UI-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-
 An end-to-end full-stack e-commerce web application designed for bakeries and confectionery shops. **Cake Fantasy** delivers a warm, luxurious shopping experience for customers to browse artisan cakes, build custom celebration cakes, manage shopping carts, and complete secure checkouts with multi-method payment support—coupled with an administrative command center for order fulfillment and inventory management.
 
 ---
@@ -75,7 +69,7 @@ cakefantasy/
 └── README.md                  # Project documentation
 ```
 
-
+---
 
 ## Technology Stack
 
@@ -87,7 +81,7 @@ cakefantasy/
 | **Server Environment** | Apache (WampServer) |
 | **Fonts & Icons** | FontAwesome 6, Google Fonts (*Outfit*, *Raleway*, *Great Vibes*) |
 
-
+---
 
 ## Database Schema Overview
 
@@ -99,7 +93,7 @@ The MySQL database `project` contains 5 core relational tables:
 4. **`tbl_cakes`**: Individual pastry items linked by `catagory_id` (`id`, `title`, `description`, `price`, `image_name`, `featured`, `active`).
 5. **`tbl_order`**: Customer purchase transactions (`id`, `product`, `price`, `qty`, `total`, `order_date`, `status`, `customer_name`, `customer_contact`, `customer_email`, `customer_address`).
 
-
+---
 
 ## Getting Started & Installation
 
@@ -128,7 +122,7 @@ The MySQL database `project` contains 5 core relational tables:
    * **Customer Storefront**: `http://localhost/cakefantasy/Project.php`
    * **Admin Dashboard**: `http://localhost/cakefantasy/admin/login.php`
 
-
+---
 
 ## Demo Credentials
 
@@ -143,7 +137,7 @@ The MySQL database `project` contains 5 core relational tables:
 * **Email:** `devinu@gmail.com` | **Password:** `password`
 * *(Or click **"Continue with Google"** to log in instantly with your real Gmail!)*
 
-
+---
 ## Screenshots 
 
 **Login**
@@ -158,7 +152,7 @@ The MySQL database `project` contains 5 core relational tables:
 **Admin Login**
 <img width="1366" height="714" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/32f3f25d-1a98-4e7e-b892-656612e38b99" />
 
-
+---
 
 
 ## Author & Acknowledgements
